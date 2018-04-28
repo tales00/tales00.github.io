@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Tales resume</title>
+
+	<link rel="stylesheet" href="css/spectre.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<style type="text/css">[v-cloak]{ display: none; }</style>
+
+</head>
+
+<body>
+	
+
+<div id="app" v-cloak>
+	
+	<header style="background-image: url(img/header_bg_tales.jpg)">
+	</header>
+
+	<div class="profile-card">
+		<div class="section card-head" style="background-image: url(img/header_bg_harakaze_curry.jpg)">
+
+			<img id="avatar" src="img/avatar_tales_color.jpg" class="avatar">
+		</div>
+		<div class="section card-content">
+			<div class="section-title h3">about me</div>
+			<div class="section-subtitle">
+				<p>
+					哈囉，我是 Tales ，正在尋找一份前端工程師的工作，若貴公司正好有相關的職缺， <a href="#contact_me" class="label label-rounded label-primary"> 請聯絡我 </a>。
+				</p>
+				<p>以下是簡單的自我介紹：</p>
+			</div>
+			<div class="section-text">
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/code-2y-plus.svg">
+					</div>
+					<div class="item-disc">
+						兩年以上 F2E 相關經驗
+					</div>
+					<div class="item-sub">
+						<p>您可以從這個履歷頁面，或下面提到的作品來評估我的前端技術能力。</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/circlecheck-icon.png">
+					</div>
+					<div class="item-disc">
+						製作與維護 <a href="https://circlecheck.plus/introduce" class="c-hand"> CircleCheck.Plus </a> 的人
+					</div>
+					<div class="item-sub">
+						<p>
+							<a href="https://circlecheck.plus/introduce" class="c-hand"> CircleCheck.Plus </a> 是一個基於我個人興趣與需求製作的 PWA 。
+						</p>
+						<p>
+							製作上使用 vue.js ，搭配 fetch 、 promise 、 indexedDB 等 ES6 與 HTML5 提供的功能，並兼顧 RWD 。
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/mobile.svg">
+					</div>
+					<div class="item-disc">
+						曾參與過手機遊戲開發
+					</div>
+					<div class="item-sub">
+						<p>經驗過博奕、益智、射擊、橫向捲軸、格鬥類型的遊戲開發</p>
+						<p>當時擔任的職務為美術。</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/logo-pixiv.svg">
+					</div>
+					<div class="item-disc">
+						某種意義上是個阿宅
+					</div>
+					<div class="item-sub">
+						<p><a href="//pixiv.me/tales00" target="_blank">
+							不只是消費者的那種
+						</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="skills" class="section card-content">
+			<div class="section-title h3">skills</div>
+			<!-- <div class="section-subtitle">我會這些東西</div> -->
+			<div class="section-text">
+				<ul class="flex">
+					<li class="skill" v-for="skl in skills" :title="skl.text">
+						<div class="skill_icon">
+							<img :src="`img/${skl.img}`">
+						</div>
+						<!-- <div class="skill_text">
+							{{ skl.text }}
+						</div> -->
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section card-content">
+			<div class="section-title h3">plus point</div>
+			
+			<div class="section-subtitle">
+				<p>覺得自己可以加分的地方</p>
+			</div>
+
+			<div class="section-text">
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/pwa-logo.png">
+					</div>
+					<div class="item-disc">
+						寫了一個 PWA
+					</div>
+					<div class="item-sub">
+						<p>我想這還滿值得多題一次的。</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/talk-phrase.svg">
+					</div>
+					<div class="item-disc">
+						跟設計師溝通順暢
+					</div>
+					<div class="item-sub">
+						<p>因為我本來是讀商業設計的。</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/php-logo.svg">
+					</div>
+					<div class="item-disc">
+						也能寫一些 PHP
+					</div>
+					<div class="item-sub">
+						<p>對後端不算陌生。 之前的工作也有要直接改後端 code 的時候。</p>
+						<p>前面提到的 CircleCheck.Plus 的後端是跑在一個叫做 <a href="" src="https://fatfreeframework.com">fat-free framework</a> 的 PHP MVC 框架。</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="section card-content">
+			<div class="section-title h3">minus point</div>
+			
+			<div class="section-subtitle">
+				<p>對您來說可能是扣分的地方</p>
+			</div>
+
+			<div class="section-text">
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/angular-react-logo.svg">
+					</div>
+					<div class="item-disc">
+						沒碰過 react 或 angular
+					</div>
+					<div class="item-sub">
+						<p>還沒碰過。</p>
+						<p>先選擇學 vue.js 就是了。</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/terminal.svg">
+					</div>
+					<div class="item-disc">
+						對命命列不熟悉
+					</div>
+					<div class="item-sub">
+						<p>雖然在學 vue.js 的時候有碰過 webpack …</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/facebook-logo.svg">
+					</div>
+					<div class="item-disc">
+						沒在用 Facebook
+					</div>
+					<div class="item-sub">
+						<p>聽說有些公司無法信任沒有 Facebook 帳號的人。</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="contact_me" class="section card-content">
+			<div class="section-title h3">contact me</div>
+			
+			<div class="section-subtitle">
+				<p>感謝您閱覽這份履歷，若需要其他進一步的訊息，請聯絡我</p>
+			</div>
+
+			<div class="section-text">
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/phone.svg">
+					</div>
+					<div class="item-disc">
+						<a href="tel:0937-067-532">0937-067-532</a>
+					</div>
+					<div class="item-sub"></div>
+				</div>
+				<div class="item">
+					<div class="item-icon">
+						<img src="img/at.svg">
+					</div>
+					<div class="item-disc">
+						<a href="mailto:talesworks@gmail.com">talesworks@gmail.com</a>
+					</div>
+					<div class="item-sub"></div>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+
+	<footer></footer>
+
+
+	<nav></nav>
+
+
+</div>
+<script src="js/vue.js"></script>
+<script src="js/app.js"></script>
+</body>
+
+</html>
